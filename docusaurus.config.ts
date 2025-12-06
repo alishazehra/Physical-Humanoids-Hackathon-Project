@@ -59,7 +59,7 @@ const config: Config = {
           label: 'Book',
         },
         {
-          href: 'https://github.com/alishazehra/Physical-AI-Book-Hackathon-Project.git', // FIXME: Update with your repo URL
+          href: 'https://github.com/alishazehra/Physical-AI-Humanoids-Hackathon.git', // FIXME: Update with your repo URL
           label: 'GitHub',
           position: 'right',
         },
@@ -82,15 +82,15 @@ const config: Config = {
           items: [
             {
               label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus', // FIXME: Update if you have a different tag
+              href: 'https://www.linkedin.com/in/syeda-alisha-zehra-52868b1b0/', // FIXME: Update if you have a different tag
             },
             {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus', // FIXME: Update with your community link
+              label: 'Email',
+              href: 'mailto:alishazehra992@gmail.com', // FIXME: Update with your community link
             },
             {
-              label: 'X',
-              href: 'https://x.com/docusaurus', // FIXME: Update with your social media
+              label: 'Physical AI Book',
+              href: 'https://physical-ai-humanoids-hackathon.vercel.app/', // FIXME: Update with your social media
             },
           ],
         },
@@ -99,7 +99,7 @@ const config: Config = {
           items: [
             {
               label: 'GitHub',
-              href: 'https://github.com/your-org/your-repo', // FIXME: Update with your repo URL
+              href: 'https://github.com/alishazehra/Physical-AI-Humanoids-Hackathon.git', // FIXME: Update with your repo URL
             },
           ],
         },

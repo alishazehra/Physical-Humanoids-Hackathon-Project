@@ -12,9 +12,11 @@ function HomepageHeader() {
       <div className="container">
         <h1 className="hero__title">{siteConfig.title}: Humanoids and Robotics</h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-         
-        </div>
+        <div className={styles.buttons}>            <Link
+              className="button button--secondary button--lg"
+              to="/intro/what-is-physical-ai">
+              Start Reading 📖
+            </Link>        </div>
       </div>
     </header>
   );
