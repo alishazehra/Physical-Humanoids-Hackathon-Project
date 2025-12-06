@@ -59,7 +59,7 @@ const config: Config = {
           label: 'Book',
         },
         {
-          href: 'https://github.com/your-org/your-repo', // FIXME: Update with your repo URL
+          href: 'https://github.com/alishazehra/Physical-AI-Book-Hackathon-Project.git', // FIXME: Update with your repo URL
           label: 'GitHub',
           position: 'right',
         },
