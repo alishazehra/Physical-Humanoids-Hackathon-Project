@@ -4,6 +4,7 @@ import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
+import HomepageFeatures from '@site/src/components/HomepageFeatures';
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
@@ -43,9 +44,37 @@ export default function Home(): JSX.Element {
                 Whether you're a beginner curious about the future of AI or an experienced engineer looking to expand your knowledge,
                 you'll find comprehensive guides, hands-on examples, and insightful discussions within these pages.
               </li>
+              <li>
+                Building effective Physical AI systems requires understanding several foundational principles that differentiate them from purely software-based AI.
+              </li>
             </ul>
+            <div className={styles.welcomeVisuals}>
+              <img src="/img/undraw_docusaurus_tree.svg" alt="Physical AI Concepts" className={styles.welcomeImage} />
+              <p className={styles.welcomeEmoji}>🤖🧠💡🛠️</p>
+            </div>
           </div>
         </section>
+        <HomepageFeatures />
+        <section className={styles.finalCallToAction}>
+          <div className="container text--center">
+            <p className={styles.finalEmoji}>🚀🌌🌟</p>
+            <h2 className={styles.finalTitle}>Ready to Build the Future?</h2>
+            <p className={styles.finalText}>
+              Embark on your journey to master Physical AI. Start exploring the chapters now and bring your ideas to life!
+            </p>
+            <div className={styles.buttons}>
+              <Link
+                className="button button--primary button--lg"
+                to="/intro/what-is-physical-ai">
+                Begin Your Adventure
+              </Link>
+              
+            </div>
+            
+          </div>
+          
+        </section>
+        <br />
       </main>
     </Layout>
   );

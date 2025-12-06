@@ -56,3 +56,48 @@
   font-size: 1.2rem;
   line-height: 1.6; /* Align with text */
 }
+
+.welcomeVisuals {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.welcomeImage {
+  width: 150px; /* Adjust size as needed */
+  height: auto;
+  border-radius: 8px; /* Slightly rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.welcomeEmoji {
+  font-size: 2.5rem; /* Large emojis */
+  margin: 0;
+}
+
+.finalCallToAction {
+  padding: 4rem 0;
+ background-color: var(--ifm-color-primary-darkest); /* Darker background for contrast */
+  color: white;
+}
+
+.finalEmoji {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.finalTitle {
+  color: white;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.finalText {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}

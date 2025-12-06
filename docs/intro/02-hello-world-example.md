@@ -7,7 +7,7 @@ description: "Expand on the fundamental concepts of Physical AI with a basic han
 
 In the previous lesson, we introduced the concept of Physical AI. Now, let's delve a bit deeper into what a "Hello World" example truly means in this context. Unlike purely software "Hello World" programs that just print text, a Physical AI "Hello World" often involves a simple interaction with a simulated or real physical environment.
 
-## Core Concepts
+## 🧠Core Concepts
 
 A "Hello World" in Physical AI demonstrates:
 *   **Perception**: Receiving input from a sensor or simulated sensor.
