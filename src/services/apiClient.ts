@@ -1,34 +1,31 @@
-const API_BASE_URL = 'http://localhost:3001'; // Assuming the auth server runs on port 3001
+interface SignupData {
+  fullName: string;
+  email: string;
+  password: string;
+  softwareBackground: string;
+  hardwareBackground: string;
+}
+
+const users: SignupData[] = [];
 
 const apiClient = {
-  async signup({ fullName, email, password }) {
-    const response = await fetch(`${API_BASE_URL}/api/auth/signup`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({ fullName, email, password }),
-    });
-    if (!response.ok) {
-      const errorData = await response.json();
-      throw new Error(errorData.message || 'Signup failed');
+  signup: async (data: SignupData) => {
+    // Check if user already exists
+    const exists = users.find(u => u.email === data.email);
+    if (exists) {
+      throw new Error('User already exists');
     }
-    return response.json();
+    users.push(data);
+    return { success: true, message: 'User registered successfully' };
   },
 
-  async login(email, password) {
-    const response = await fetch(`${API_BASE_URL}/api/auth/login`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({ email, password }),
-    });
-    if (!response.ok) {
-      throw new Error('Login failed');
+  login: async (email: string, password: string) => {
+    const user = users.find(u => u.email === email);
+    if (!user || user.password !== password) {
+      throw new Error('Invalid email or password');
     }
-    return response.json();
-  },
+    return { email: user.email, fullName: user.fullName };
+  }
 };
 
 export default apiClient;
