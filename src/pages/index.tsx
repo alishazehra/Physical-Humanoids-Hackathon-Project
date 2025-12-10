@@ -99,6 +99,7 @@ function HomepageHeader() {
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
+        <br />
         <h1 className="hero__title">{siteConfig.title}: Humanoids and Robotics</h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
@@ -144,7 +145,8 @@ export default function Home(): JSX.Element {
       {/* ===================== Chat Button on Top ===================== */}
       <div style={{ position: 'fixed', top: '20px', right: '20px', zIndex: 1000 }}>
         <br />
-        <br />
+       <br />
+        
         <button
         
           onClick={toggleChat}
@@ -162,6 +164,7 @@ export default function Home(): JSX.Element {
 
           }}
         >
+          
           🗨️
           
         </button>
