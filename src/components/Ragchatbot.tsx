@@ -13,7 +13,7 @@ export default function RagChatbot() {
     setAnswer("");
 
     try {
-      const response = await fetch("https://hackathon-rag-chatbot.onrender.com/chat", {
+      const response = await fetch("https://rag-2azy.onrender.com/chat", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
